@@ -1,5 +1,17 @@
+/*
+全局class命名规范：
+使用全驼峰命名；
+例如：PageLogin
+
+局部class命名规范：
+使用局域名+全驼峰名称；
+例如：homePageLogin
+
+局域名命名规范：
+使用小写字母表示局域名；
+例如：home
+*/
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +22,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+html,body,.App,#root{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }

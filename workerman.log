@@ -1,0 +1,11 @@
+2024-01-21 15:32:44 pid:1 Error: Class 'Http' not found in D:\mymap\OnlineMapRoute\ArouteService.php:40
+Stack trace:
+#0 D:\mymap\OnlineMapRoute\Workerman\Connection\TcpConnection.php(637): handle_message(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#1 D:\mymap\OnlineMapRoute\Workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #19)
+#2 D:\mymap\OnlineMapRoute\Workerman\Worker.php(2419): Workerman\Events\Select->loop()
+#3 D:\mymap\OnlineMapRoute\Workerman\Worker.php(1406): Workerman\Worker->run()
+#4 D:\mymap\OnlineMapRoute\Workerman\Worker.php(1349): Workerman\Worker::forkWorkersForWindows()
+#5 D:\mymap\OnlineMapRoute\Workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 D:\mymap\OnlineMapRoute\ArouteService.php(51): Workerman\Worker::runAll()
+#7 {main}
+2024-01-21 15:32:44 pid:1 Worker process terminated
