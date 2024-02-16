@@ -1,5 +1,18 @@
 <?php
 /**
+引入文件
+ */
+use Workerman\Worker;
+use Workerman\Timer;
+use Workerman\Connection\AsyncTcpConnection;
+use Workerman\Protocols\Http;
+use Workerman\Protocols\Http\Response;
+require 'Workerman/Autoloader.php';
+require 'config/serverConfig.php';//服务器配置
+/**
+引入文件End
+*/
+/**
 全局变量
  */
 $the=[
@@ -13,19 +26,7 @@ $staticRouteFile=null;
 $grappleListFile=null;
 /**
 全局变量End
- */
-/**
-引入文件
- */
-use Workerman\Worker;
-use Workerman\Timer;
-use Workerman\Connection\AsyncTcpConnection;
-use Workerman\Protocols\Http\Response;
-require 'Workerman/Autoloader.php';
-require 'config/serverConfig.php';//服务器配置
-/**
-引入文件End
- */
+*/
 
 if(!file_exists('config')){
     mkdir('config',0777,true);echo "文件夹 'config' 创建成功;";
@@ -82,15 +83,23 @@ function grappleRoute(){//抓取其他路由的路由并更新到此路由
 ETX;
     return true;
 }
-function handle_message($connection,$data){//响应HTTP请求
-global $the;
-if($the["Mode"]==='static'){
-    $response=json_encode($the['StaticRoute']);
-    $connection->send($response);
-}elseif ($the["Mode"]==='dynamics'){
-    $response=json_encode($the['DynamicsRoute']);
-    $connection->send($response);
-}
+function handle_message($connection,Request $request){//响应HTTP请求
+    global $the;
+        //$connection->header('Access-Control-Allow-Origin: *');//在这一行报错
+        //$connection->header('Content-Type', 'application/json');
+
+
+        $response = new Response(302, ['Location' => $location]);
+        $connection->send($response);
+
+
+        //$response=json_encode($the['StaticRoute']);
+        //$connection->send($response);
+    // if($the["Mode"]==='static'){
+    // }elseif ($the["Mode"]==='dynamics'){
+    //     $response=json_encode($the['DynamicsRoute']);
+    //     $connection->send($response);
+    // }
 }
 /**
 函数End

@@ -9,3 +9,113 @@ Stack trace:
 #6 D:\mymap\OnlineMapRoute\ArouteService.php(51): Workerman\Worker::runAll()
 #7 {main}
 2024-01-21 15:32:44 pid:1 Worker process terminated
+2024-02-14 19:07:39 pid:1 Error: Call to undefined method Workerman\Protocols\Http::header() in D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php:97
+Stack trace:
+#0 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(2486): handle_connection(Object(Workerman\Connection\TcpConnection))
+#1 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Events\Select.php(294): Workerman\Worker->acceptConnection(Resource id #17)
+#2 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(2419): Workerman\Events\Select->loop()
+#3 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1406): Workerman\Worker->run()
+#4 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1349): Workerman\Worker::forkWorkersForWindows()
+#5 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php(126): Workerman\Worker::runAll()
+#7 {main}
+2024-02-14 19:07:39 pid:1 Worker process terminated
+2024-02-14 19:25:24 pid:1 Error: Call to undefined method Workerman\Protocols\Http::header() in D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php:89
+Stack trace:
+#0 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Connection\TcpConnection.php(637): handle_message(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#1 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#2 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(2419): Workerman\Events\Select->loop()
+#3 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1406): Workerman\Worker->run()
+#4 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1349): Workerman\Worker::forkWorkersForWindows()
+#5 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php(128): Workerman\Worker::runAll()
+#7 {main}
+2024-02-14 19:25:24 pid:1 Worker process terminated
+2024-02-14 20:34:58 pid:1 Error: Call to undefined method Workerman\Protocols\Http::header() in D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php:88
+Stack trace:
+#0 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Connection\TcpConnection.php(637): handle_message(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#1 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#2 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(2419): Workerman\Events\Select->loop()
+#3 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1406): Workerman\Worker->run()
+#4 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1349): Workerman\Worker::forkWorkersForWindows()
+#5 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php(127): Workerman\Worker::runAll()
+#7 {main}
+2024-02-14 20:34:58 pid:1 Worker process terminated
+2024-02-14 20:38:28 pid:1 Error: Call to undefined method Workerman\Protocols\Http::header() in D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php:97
+Stack trace:
+#0 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(2486): handle_connection(Object(Workerman\Connection\TcpConnection))
+#1 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Events\Select.php(294): Workerman\Worker->acceptConnection(Resource id #17)
+#2 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(2419): Workerman\Events\Select->loop()
+#3 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1406): Workerman\Worker->run()
+#4 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1349): Workerman\Worker::forkWorkersForWindows()
+#5 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php(126): Workerman\Worker::runAll()
+#7 {main}
+2024-02-14 20:38:28 pid:1 Worker process terminated
+2024-02-15 10:42:32 pid:1 Error: Call to undefined method Workerman\Protocols\Http::header() in D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php:97
+Stack trace:
+#0 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(2486): handle_connection(Object(Workerman\Connection\TcpConnection))
+#1 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Events\Select.php(294): Workerman\Worker->acceptConnection(Resource id #17)
+#2 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(2419): Workerman\Events\Select->loop()
+#3 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1406): Workerman\Worker->run()
+#4 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1349): Workerman\Worker::forkWorkersForWindows()
+#5 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php(126): Workerman\Worker::runAll()
+#7 {main}
+2024-02-15 10:42:32 pid:1 Worker process terminated
+2024-02-15 10:49:42 pid:1 Error: Call to undefined method Workerman\Connection\TcpConnection::header() in D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php:88
+Stack trace:
+#0 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Connection\TcpConnection.php(637): handle_message(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#1 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#2 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(2419): Workerman\Events\Select->loop()
+#3 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1406): Workerman\Worker->run()
+#4 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1349): Workerman\Worker::forkWorkersForWindows()
+#5 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php(127): Workerman\Worker::runAll()
+#7 {main}
+2024-02-15 10:49:42 pid:1 Worker process terminated
+2024-02-15 10:54:39 pid:1 Error: Call to undefined method Workerman\Connection\TcpConnection::header() in D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php:88
+Stack trace:
+#0 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Connection\TcpConnection.php(637): handle_message(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#1 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#2 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(2419): Workerman\Events\Select->loop()
+#3 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1406): Workerman\Worker->run()
+#4 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1349): Workerman\Worker::forkWorkersForWindows()
+#5 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php(128): Workerman\Worker::runAll()
+#7 {main}
+2024-02-15 10:54:39 pid:1 Worker process terminated
+2024-02-15 11:03:30 pid:1 Error: Call to undefined method Workerman\Protocols\Http::header() in D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php:89
+Stack trace:
+#0 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Connection\TcpConnection.php(637): handle_message(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#1 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#2 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(2419): Workerman\Events\Select->loop()
+#3 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1406): Workerman\Worker->run()
+#4 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1349): Workerman\Worker::forkWorkersForWindows()
+#5 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php(129): Workerman\Worker::runAll()
+#7 {main}
+2024-02-15 11:03:30 pid:1 Worker process terminated
+2024-02-15 11:09:44 pid:1 Error: Call to undefined method Workerman\Connection\TcpConnection::header() in D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php:88
+Stack trace:
+#0 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Connection\TcpConnection.php(637): handle_message(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#1 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#2 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(2419): Workerman\Events\Select->loop()
+#3 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1406): Workerman\Worker->run()
+#4 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1349): Workerman\Worker::forkWorkersForWindows()
+#5 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php(129): Workerman\Worker::runAll()
+#7 {main}
+2024-02-15 11:09:44 pid:1 Worker process terminated
+2024-02-15 11:17:46 pid:1 Error: Call to undefined method Workerman\Connection\TcpConnection::header() in D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php:88
+Stack trace:
+#0 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Connection\TcpConnection.php(637): handle_message(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#1 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#2 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(2419): Workerman\Events\Select->loop()
+#3 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1406): Workerman\Worker->run()
+#4 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(1349): Workerman\Worker::forkWorkersForWindows()
+#5 D:\mymap-copy\mymap\OnlineMapRoute\Workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php(122): Workerman\Worker::runAll()
+#7 {main}
+2024-02-15 11:17:46 pid:1 Worker process terminated
