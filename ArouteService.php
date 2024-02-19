@@ -2,6 +2,8 @@
 /**
 引入文件
  */
+
+use Workerman\Protocols\Http\Request;
 use Workerman\Worker;
 use Workerman\Timer;
 use Workerman\Connection\AsyncTcpConnection;
@@ -85,21 +87,16 @@ ETX;
 }
 function handle_message($connection,Request $request){//响应HTTP请求
     global $the;
-        //$connection->header('Access-Control-Allow-Origin: *');//在这一行报错
-        //$connection->header('Content-Type', 'application/json');
-
-
-        $response = new Response(302, ['Location' => $location]);
+    $response = new Response();// 创建一个新的Response对象
+    $response->withStatus(200);// 设置HTTP状态码
+    $response->withHeader('Access-Control-Allow-Origin', '*');// 设置响应头
+    if($the["Mode"]==='static'){
+        $response->withBody(json_encode($the['StaticRoute']));// 设置响应体内容
         $connection->send($response);
-
-
-        //$response=json_encode($the['StaticRoute']);
-        //$connection->send($response);
-    // if($the["Mode"]==='static'){
-    // }elseif ($the["Mode"]==='dynamics'){
-    //     $response=json_encode($the['DynamicsRoute']);
-    //     $connection->send($response);
-    // }
+    }elseif ($the["Mode"]==='dynamics'){
+        $response->withBody(json_encode($the['DynamicsRoute']));// 设置响应体内容
+        $connection->send($response);
+    }
 }
 /**
 函数End

@@ -119,3 +119,14 @@ Stack trace:
 #6 D:\mymap-copy\mymap\OnlineMapRoute\ArouteService.php(122): Workerman\Worker::runAll()
 #7 {main}
 2024-02-15 11:17:46 pid:1 Worker process terminated
+2024-02-16 18:04:23 pid:1 TypeError: Argument 2 passed to handle_message() must be an instance of Request, instance of Workerman\Protocols\Http\Request given, called in D:\mymap\OnlineMapRoute\Workerman\Connection\TcpConnection.php on line 637 and defined in D:\mymap\OnlineMapRoute\ArouteService.php:86
+Stack trace:
+#0 D:\mymap\OnlineMapRoute\Workerman\Connection\TcpConnection.php(637): handle_message(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#1 D:\mymap\OnlineMapRoute\Workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 D:\mymap\OnlineMapRoute\Workerman\Worker.php(2419): Workerman\Events\Select->loop()
+#3 D:\mymap\OnlineMapRoute\Workerman\Worker.php(1406): Workerman\Worker->run()
+#4 D:\mymap\OnlineMapRoute\Workerman\Worker.php(1349): Workerman\Worker::forkWorkersForWindows()
+#5 D:\mymap\OnlineMapRoute\Workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 D:\mymap\OnlineMapRoute\ArouteService.php(128): Workerman\Worker::runAll()
+#7 {main}
+2024-02-16 18:04:23 pid:1 Worker process terminated
