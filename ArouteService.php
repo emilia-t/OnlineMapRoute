@@ -1,4 +1,11 @@
 <?php
+#Version 0.5
+################Script initial execution################
+echo "OnlineMapRoute Version 0.5\n";
+echo "(c) Minxi Wan。保留所有权利。\n";
+echo "Please wait ! the service will start in 5 seconds.\n";
+usleep(5000000);
+################Script initial execution################
 /**
 引入文件
  */
@@ -105,7 +112,7 @@ function getStaticRoute(){//获取静态路由
         $the["StaticRoute"]=$Data;
     }
     echo<<<ETX
-静态路由表：
+Static routing list：
 ETX;
     print_r($the["StaticRoute"]);
     return $Data;
